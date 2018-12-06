@@ -9,6 +9,39 @@ Object.keys(alehos.handlers).forEach(key => alehos.registerHandler(key, (req, cb
     cb(null);
 }));
 
+alehos.registerHandler('reportState', (req, cb) => {
+    const properties = [
+        {
+            "namespace":"Alexa.LockController",
+            "name":"lockState",
+            "value":"LOCKED",
+        }
+    ];
+    cb(null, properties);
+});
+
+alehos.registerHandler('lockControllerUnlock', (req, cb) => {
+    const properties = [
+        {
+            "namespace":"Alexa.LockController",
+            "name":"lockState",
+            "value":"UNLOCKED",
+        }
+    ];
+    cb(null, properties);
+});
+
+alehos.registerHandler('lockControllerLock', (req, cb) => {
+    const properties = [
+        {
+            "namespace":"Alexa.LockController",
+            "name":"lockState",
+            "value":"LOCKED",
+        }
+    ];
+    cb(null, properties);
+});
+
 alehos.registerHandler('discover', (req, cb) => {
     const payload = {
         endpoints: [
