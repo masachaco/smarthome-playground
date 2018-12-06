@@ -1,0 +1,23 @@
+{
+  "name": "smarthome-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "package": "zip -r smarthome.zip ./* -x \"package.zip\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masachaco/smarthome-playground.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/masachaco/smarthome-playground/issues"
+  },
+  "dependencies": {
+    "alehos3": "git+https://github.com/masachaco/alehos3.git#master"
+  },
+  "homepage": "https://github.com/masachaco/smarthome-playground#readme"
+}
